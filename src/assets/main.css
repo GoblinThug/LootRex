@@ -1,1 +1,52 @@
 @import "tailwindcss";
+
+.cards .card.gold {
+    background: radial-gradient(#A47531, #74551F);
+    border-bottom: 2px solid #FEAD39;
+}
+.cards .gold {
+    background: radial-gradient(#A47531, #74551F);
+}
+.cards .card.red {
+    background: radial-gradient(#8E3131, #471620);
+    border-bottom: 2px solid #F73434;
+}
+.cards .red {
+    background: radial-gradient(#8E3131, #471620);
+}
+.cards .card.pink {
+    background: radial-gradient(#611D6E, #3A0A43);
+    border-bottom: 2px solid #BB41D7;
+}
+.cards .pink {
+    background: radial-gradient(#611D6E, #3A0A43);
+}
+.cards .card.purple {
+    background: radial-gradient(#432877, #241346);
+    border-bottom: 2px solid #7B4EEE;
+}
+.cards .purple {
+    background: radial-gradient(#432877, #241346);
+}
+.cards .card.blue {
+    background: radial-gradient(#31358E, #0F1F58);
+    border-bottom: 2px solid #4D69CD;
+}
+.cards .blue {
+    background: radial-gradient(#31358E, #0F1F58);
+}
+.green-btn {
+    background: linear-gradient(#212821, #1F241F) padding-box,
+    linear-gradient(to bottom, #2E3A2E, #1F241F) border-box;
+    border: 1px solid transparent;
+}
+.orange-btn {
+    background: linear-gradient(#FFB531, #E09B2D) padding-box,
+    linear-gradient(to bottom, #F5C542, #E09B2D) border-box;
+    border: 1px solid transparent;
+}
+.gray-btn {
+    background: linear-gradient(#2A2F2A, #3A3F3A) padding-box,
+    linear-gradient(to bottom, #3C413C, #3A3F3A) border-box;
+    border: 1px solid transparent;
+}
