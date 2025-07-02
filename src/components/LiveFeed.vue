@@ -1,31 +1,31 @@
 <script setup>
-import { ref, onMounted } from 'vue'
+	import { ref, onMounted } from 'vue'
 
-const blocks = ref([])
-const colors = ['gold', 'red', 'pink', 'purple', 'blue']
-const paused = ref(false)
+	const blocks = ref([])
+	const colors = ['gold', 'red', 'pink', 'purple', 'blue']
+	const paused = ref(false)
 
-function getRandomItem() {
-	return {
-		id: Date.now() + Math.random(),
-		color: colors[Math.floor(Math.random() * colors.length)],
-		drop: Math.floor(Math.random() * 5) + 1,
-	}
-}
-
-onMounted(() => {
-	for (let i = 0; i < 20; i++) {
-		blocks.value.push(getRandomItem())
-	}
-	blocks.value.reverse()
-
-	setInterval(() => {
-		if (!paused.value) {
-			blocks.value.unshift(getRandomItem())
-			if (blocks.value.length > 20) blocks.value.pop()
+	function getRandomItem() {
+		return {
+			id: Date.now() + Math.random(),
+			color: colors[Math.floor(Math.random() * colors.length)],
+			drop: Math.floor(Math.random() * 5) + 1,
 		}
-	}, 1000)
-})
+	}
+
+	onMounted(() => {
+		for (let i = 0; i < 20; i++) {
+			blocks.value.push(getRandomItem())
+		}
+		blocks.value.reverse()
+
+		setInterval(() => {
+			if (!paused.value) {
+				blocks.value.unshift(getRandomItem())
+				if (blocks.value.length > 20) blocks.value.pop()
+			}
+		}, 1000)
+	})
 </script>
 
 <template>
