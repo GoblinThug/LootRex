@@ -51,7 +51,7 @@
 				</svg>
 			</div>
 		</div>
-		<transition-group name="drop-fall" tag="div" class="py-1 ps-1 bg-[#1A1D1A] rounded-l-[8px] gap-1 cards flex overflow-hidden relative" @mouseenter="paused = true"
+		<transition-group name="drop-fall" tag="div" class="py-1 ps-1 bg-[#1A1D1A] rounded-l-[8px] gap-[4px] cards flex overflow-hidden relative" @mouseenter="paused = true"
 						  @mouseleave="paused = false">
 			<div v-for="(item, index) in blocks" :key="item.id" :class="['card h-[100px] min-w-[165px] rounded-[8px] flex items-center justify-center relative overflow-hidden group cursor-pointer', item.color]">
 				<img :src="`/assets/img/drops/drop-${item.drop}.png`" alt="drop" class="absolute group-hover:translate-y-[-100px] duration-200"/>
@@ -95,7 +95,6 @@
 
 	.cards {
 		display: flex;
-		gap: 1rem;
 		position: relative;
 		transition: transform 0.6s ease;
 	}
