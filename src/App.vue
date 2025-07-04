@@ -20,8 +20,7 @@
 
 <template>
 	<div class="h-full flex flex-col gap-10">
-		<WidgetContainerModal/>
-		<div class="flex flex-col gap-1 relative">
+		<div class="flex flex-col gap-1 relative grow-0 shrink-0 basis-auto">
 			<Header/>
 			<LiveFeed/>
 			<!-- Окно с бонусом -->
@@ -29,9 +28,10 @@
 			<!-- Окно с уведомлениями -->
 			<Notifications class="hidden"/>
 		</div>
-		<div class="px-2">
+		<div class="px-2 grow shrink-0 basis-auto">
+			<WidgetContainerModal/>
 			<router-view/>
 		</div>
-		<Footer/>
+		<Footer class="grow-0 shrink-0 basis-auto"/>
 	</div>
 </template>
