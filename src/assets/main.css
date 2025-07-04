@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+*::-webkit-scrollbar {
+    display: none;
+}
+
+.modal-container {
+    background-color: rgba(20, 23, 20, 0.5)!important;
+    @apply z-[100] backdrop-blur-[30px];
+}
+
 .cards .card.gold {
     background: radial-gradient(#A47531, #74551F);
     border-bottom: 2px solid #FEAD39;
