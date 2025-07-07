@@ -34,7 +34,7 @@
 			<img src="/assets/img/main-banner/right-dino.png" alt="" class="absolute bottom-0 lg:w-[35%] 2xl:right-12 2xl:w-auto right-0 hidden lg:flex">
 			<div class="flex flex-col items-center justify-center relative">
 				<img src="/assets/img/main-banner/summer-pass.png" alt="">
-				<button class="flex items-center justify-center rounded-[8px] orange-btn uppercase max-w-[260px] w-full min-h-[52px] text-[14px] font-bold text-[#141714] cursor-pointer relative hover:opacity-80 duration-200 active:scale-95">Участвовать</button>
+				<router-link :to="{ name: 'calendar' }" class="flex items-center justify-center rounded-[8px] orange-btn uppercase max-w-[260px] w-full min-h-[52px] text-[14px] font-bold text-[#141714] cursor-pointer relative hover:opacity-80 duration-200 active:scale-95">Участвовать</router-link>
 			</div>
 		</div>
 		<!-- Фильтры -->

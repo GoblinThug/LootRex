@@ -6,6 +6,7 @@ import OpenFreeCase from "@/views/OpenFreeCase.vue";
 import OpenCase from "@/views/OpenCase.vue";
 import Bonuses from "@/views/Bonuses.vue";
 import Raffle from "@/views/Raffle.vue";
+import Calendar from "@/views/Calendar.vue";
 
 const routes: RouteRecordRaw[] = [
     {
@@ -37,7 +38,13 @@ const routes: RouteRecordRaw[] = [
         name: "raffle",
         component: Raffle,
         props: true,
-    }
+    },
+    {
+        path: "/calendar",
+        name: "calendar",
+        component: Calendar,
+        props: true,
+    },
 ];
 
 const scrollBehavior: RouterScrollBehavior = (to, from, savedPosition) => {

@@ -12,12 +12,14 @@
 	import AuthModal from "@/components/modals/AuthModal.vue";
 	import RequirementModal from "@/components/modals/RequirementModal.vue";
 	import HowItWorkModal from "@/components/modals/HowItWorkModal.vue";
+	import CalendarInfoModal from "@/components/modals/CalendarInfoModal.vue";
 
 	config({
 		store: {
 			auth: AuthModal,
 			requirement: RequirementModal,
 			howItWork: HowItWorkModal,
+			calendarInfo: CalendarInfoModal,
 		}
 	});
 </script>
