@@ -10,10 +10,14 @@
 	import Notifications from "@/components/Notifications.vue";
 
 	import AuthModal from "@/components/modals/AuthModal.vue";
+	import RequirementModal from "@/components/modals/RequirementModal.vue";
+	import HowItWorkModal from "@/components/modals/HowItWorkModal.vue";
 
 	config({
 		store: {
 			auth: AuthModal,
+			requirement: RequirementModal,
+			howItWork: HowItWorkModal,
 		}
 	});
 </script>

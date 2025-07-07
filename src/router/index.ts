@@ -4,6 +4,7 @@ import type { RouterScrollBehavior } from "vue-router";
 import Main from "@/views/Main.vue";
 import OpenFreeCase from "@/views/OpenFreeCase.vue";
 import OpenCase from "@/views/OpenCase.vue";
+import Bonuses from "@/views/Bonuses.vue";
 
 const routes: RouteRecordRaw[] = [
     {
@@ -22,6 +23,12 @@ const routes: RouteRecordRaw[] = [
         path: "/open-case",
         name: "open-case",
         component: OpenCase,
+        props: true,
+    },
+    {
+        path: "/bonuses",
+        name: "bonuses",
+        component: Bonuses,
         props: true,
     },
 ];

@@ -23,7 +23,7 @@
 			</svg>
 			<p class="uppercase text-[#839280] group-hover:text-[#FFB531] text-[14px] font-semibold duration-200">Улучшения</p>
 		</router-link>
-		<router-link :to="{}" class="flex items-center gap-2 group">
+		<router-link :to="{name: 'bonuses'}" class="flex items-center gap-2 group">
 			<svg class="fill-[#839280] group-hover:fill-[#FFB531] duration-200" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path d="M2.57129 12.7588V17.378C2.57381 17.6101 2.66782 17.8319 2.83289 17.9952C2.99796 18.1585 3.22077 18.2501 3.45296 18.25H8.83879V12.7588H2.57129Z"/>
 				<path d="M10.4111 18.25H15.797C16.0291 18.2501 16.252 18.1585 16.417 17.9952C16.5821 17.8319 16.6761 17.6101 16.6786 17.378V12.7588H10.4111V18.25Z"/>
