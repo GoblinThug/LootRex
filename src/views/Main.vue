@@ -346,7 +346,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="grid grid-cols-5 gap-5 cases">
+			<div class="grid lg:grid-cols-5 gap-5 cases">
 				<div class="flex flex-col items-center gap-[10px] justify-between">
 					<img src="/assets/img/cases/case-6.png" alt="" class="opacity-50">
 					<h3 class="text-[20px] font-bold text-[#839280] leading-none text-center">РАСПИСНОЕ ЯЙЦО</h3>
@@ -407,7 +407,7 @@
 			<div class="flex flex-col gap-2 items-center">
 				<h2 class="text-[36px] font-bold uppercase leading-none text-center">ФИРМЕННЫЕ КЕЙСЫ</h2>
 			</div>
-			<div class="grid grid-cols-5 gap-5 cases">
+			<div class="grid lg:grid-cols-5 gap-5 cases">
 				<router-link :to="{ name: 'open-case' }" class="flex flex-col items-center gap-[10px] justify-between group cursor-pointer">
 					<img src="/assets/img/cases/case-1.png" alt="">
 					<h3 class="text-[20px] font-bold text-[#839280] leading-none text-center">RED CASE</h3>
@@ -474,12 +474,12 @@
 </template>
 
 <style scoped>
-	@media (max-width: 370px) {
+	@media (max-width: 300px) {
 		.cases {
 			@apply grid-cols-1;
 		}
 	}
-	@media (min-width: 371px) and (max-width: 600px) {
+	@media (min-width: 369px) and (max-width: 600px) {
 		.cases {
 			@apply grid-cols-2;
 		}

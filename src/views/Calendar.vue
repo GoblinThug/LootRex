@@ -10,9 +10,9 @@ import {openModal} from "jenesius-vue-modal";
 				<p class="uppercase text-[14px] font-bold text-[#FFB531] leading-none text-center">Выполняй задания каждый день</p>
 				<h2 class="uppercase text-[36px] font-bold leading-none text-center">ЗАБИРАЙ ПОДАРКИ ИЗ КАЛЕНДАРЯ</h2>
 			</div>
-			<div class="bg-[#1A1D1A] rounded-[20px] p-10 grid grid-cols-[620px_1fr] items-center">
+			<div class="bg-[#1A1D1A] rounded-[20px] p-5 md:p-10 flex flex-col-reverse xl:grid xl:grid-cols-[620px_1fr] items-center overflow-hidden justify-between relative">
 				<div class="flex flex-col gap-8">
-					<h2 class="text-[82px] font-extrabold leading-[100%]">ЛЕТНИЙ КАЛЕНДАРЬ</h2>
+					<h2 class="text-[40px] md:text-[82px] font-extrabold leading-[100%] text-center xl:text-start">ЛЕТНИЙ КАЛЕНДАРЬ</h2>
 					<div class="flex flex-col gap-4">
 						<div class="flex flex-col gap-3">
 							<div class="flex items-center justify-between">
@@ -83,52 +83,41 @@ import {openModal} from "jenesius-vue-modal";
 					</button>
 				</div>
 				<div class="flex h-full justify-center items-center">
-					<svg class="absolute h-full" width="927" height="543" viewBox="0 0 927 543" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<g filter="url(#filter0_f_71_13319)">
-							<circle cx="476.5" cy="272.5" r="146.5" fill="#3F7521"/>
-						</g>
-						<defs>
-							<filter id="filter0_f_71_13319" x="0" y="-204" width="953" height="953" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-								<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-								<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-								<feGaussianBlur stdDeviation="165" result="effect1_foregroundBlur_71_13319"/>
-							</filter>
-						</defs>
-					</svg>
-					<img class="relative max-w-[600px]" src="/assets/img/calendar/summer-poster.png" alt="">
+					<div class="bg-[#3F7521] absolute w-[300px] h-[300px] rounded-full blur-[300px]"></div>
+					<img class="relative max-w-[600px] w-full" src="/assets/img/calendar/summer-poster.png" alt="">
 				</div>
 			</div>
 		</div>
-		<div class="grid grid-cols-6 gap-[10px]">
+		<div class="grid grid-cols-3 md:grid-cols-6 gap-[10px]">
 			<div class="bg-[#1A1D1A] rounded-[16px] w-full p-5 flex items-center justify-center py-[50%] relative">
-				<svg class="absolute w-full h-auto p-5" viewBox="0 0 235 235" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<svg class="absolute w-full h-auto p-3 md:p-5" viewBox="0 0 235 235" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<rect x="0.5" y="0.5" width="234" height="234" rx="11.5" stroke="#839280" stroke-dasharray="12 12"/>
 				</svg>
 				<img src="/assets/img/drops/drop-3.png" alt="" class="w-2/3 absolute">
 			</div>
 			<div class="bg-[#1A1D1A] rounded-[16px] w-full p-5 flex items-center justify-center py-[50%] relative">
-				<svg class="absolute w-full h-auto p-5" viewBox="0 0 235 235" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<svg class="absolute w-full h-auto p-3 md:p-5" viewBox="0 0 235 235" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<rect x="0.5" y="0.5" width="234" height="234" rx="11.5" stroke="#839280" stroke-dasharray="12 12"/>
 				</svg>
 				<img src="/assets/img/cases/case-3.png" alt="" class="w-2/3 absolute">
 			</div>
 			<div class="bg-[#1A1D1A] rounded-[16px] w-full p-5 flex items-center justify-center py-[50%] relative">
-				<svg class="absolute w-full h-auto p-5 opacity-50" viewBox="0 0 235 235" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<svg class="absolute w-full h-auto p-3 md:p-5 opacity-50" viewBox="0 0 235 235" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<rect x="0.5" y="0.5" width="234" height="234" rx="11.5" stroke="#839280" stroke-dasharray="12 12"/>
 				</svg>
-				<p class="text-[96px] font-extrabold absolute text-[#839280]/50">3</p>
+				<p class="text-[5.6vw] xl:text-[96px] font-extrabold absolute text-[#839280]/50">3</p>
 			</div>
 			<div class="bg-[#1A1D1A] rounded-[16px] w-full p-5 flex items-center justify-center py-[50%] relative cursor-pointer active:scale-98 hover:scale-95 duration-200">
-				<svg class="absolute w-full h-auto p-5" viewBox="0 0 235 235" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<svg class="absolute w-full h-auto p-3 md:p-5" viewBox="0 0 235 235" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<rect x="0.5" y="0.5" width="234" height="234" rx="11.5" stroke="#FFB531" stroke-dasharray="12 12"/>
 				</svg>
-				<p class="text-[96px] font-extrabold absolute text-[#FFB531]">4</p>
+				<p class="text-[5.6vw] xl:text-[96px] font-extrabold absolute text-[#FFB531]">4</p>
 			</div>
 			<div v-for="i in 26" class="bg-[#1A1D1A] rounded-[16px] w-full p-5 flex items-center justify-center py-[50%] relative">
-				<svg class="absolute w-full h-auto p-5" viewBox="0 0 235 235" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<svg class="absolute w-full h-auto p-3 md:p-5" viewBox="0 0 235 235" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<rect x="0.5" y="0.5" width="234" height="234" rx="11.5" stroke="#839280" stroke-dasharray="12 12"/>
 				</svg>
-				<p class="text-[96px] font-extrabold absolute text-[#839280]">{{ i + 4 }}</p>
+				<p class="text-[5.6vw] xl:text-[96px] font-extrabold absolute text-[#839280]">{{ i + 4 }}</p>
 			</div>
 		</div>
 	</div>
