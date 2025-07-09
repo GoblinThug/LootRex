@@ -4,6 +4,18 @@
     display: none;
 }
 
+:root {
+    --slider-bg: #272A27!important;
+    --slider-connect-bg: #FFB531!important;
+    --slider-tooltip-bg: #FFB531!important;
+    --slider-tooltip-color: #141714!important;
+    --slider-handle-ring-width: 0px;
+    --slider-handle-bg: #839280;
+    --slider-height: 5px;
+    --slider-handle-height: 12px;
+    --slider-handle-width: 12px;
+}
+
 .modal-container {
     background-color: rgba(20, 23, 20, 0.5)!important;
     @apply z-[100] backdrop-blur-[30px];
@@ -52,6 +64,11 @@
 .orange-btn {
     background: linear-gradient(#FFB531, #E09B2D) padding-box,
     linear-gradient(to bottom, #F5C542, #E09B2D) border-box;
+    border: 1px solid transparent;
+}
+.red-btn {
+    background: linear-gradient(#482826, #482826) padding-box,
+    linear-gradient(to bottom, #783F3B, #482826) border-box;
     border: 1px solid transparent;
 }
 .gray-btn {

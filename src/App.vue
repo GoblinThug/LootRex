@@ -36,8 +36,22 @@
 		</div>
 		<div class="px-2 grow shrink-0 basis-auto">
 			<WidgetContainerModal/>
-			<router-view/>
+			<Transition name="fade">
+				<router-view/>
+			</Transition>
 		</div>
 		<Footer class="grow-0 shrink-0 basis-auto"/>
 	</div>
 </template>
+
+<style scoped>
+	.fade-enter-active,
+	.fade-leave-active {
+		transition: opacity 0.5s ease;
+	}
+
+	.fade-enter-from,
+	.fade-leave-to {
+		opacity: 0;
+	}
+</style>

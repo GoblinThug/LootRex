@@ -11,6 +11,8 @@ import Payment from "@/views/Payment.vue";
 import Contacts from "@/views/Contacts.vue";
 import FAQ from "@/views/FAQ.vue";
 import Contracts from "@/views/Contracts.vue";
+import Upgrade from "@/views/Upgrade.vue";
+import Profile from "@/views/Profile.vue";
 
 const routes: RouteRecordRaw[] = [
     {
@@ -71,6 +73,18 @@ const routes: RouteRecordRaw[] = [
         path: "/contracts",
         name: "contracts",
         component: Contracts,
+        props: true,
+    },
+    {
+        path: "/upgrade",
+        name: "upgrade",
+        component: Upgrade,
+        props: true,
+    },
+    {
+        path: "/profile",
+        name: "profile",
+        component: Profile,
         props: true,
     },
 ];

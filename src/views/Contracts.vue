@@ -558,5 +558,4 @@
 	.contracts .blue .glow {
 		@apply bg-[#31358E];
 	}
-
 </style>

@@ -10,10 +10,12 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
+    "@vueform/slider": "^2.1.10",
     "jenesius-vue-modal": "^1.11.9",
     "tailwindcss": "^4.1.11",
     "vue": "^3.5.17",
-    "vue-router": "^4.5.1"
+    "vue-router": "^4.5.1",
+    "vue3-circle-progress": "^1.0.7"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.0",

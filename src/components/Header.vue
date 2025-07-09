@@ -25,7 +25,7 @@
 						<path fill-rule="evenodd" clip-rule="evenodd" d="M20.9179 17.5C21.067 17.4961 21.1799 17.6342 21.1394 17.7778C20.9387 18.4902 20.62 19.0975 20.1088 19.6088C19.3604 20.3571 18.4114 20.6892 17.239 20.8469C16.0998 21 14.6442 21 12.8064 21H10.6936C8.85583 21 7.40019 21 6.26098 20.8469C5.08856 20.6892 4.13961 20.3571 3.39124 19.6088C2.64288 18.8604 2.31076 17.9114 2.15314 16.739C1.99997 15.5998 1.99998 14.1442 2 12.3064V12.1936C1.99998 10.3558 1.99997 8.90019 2.15314 7.76098C2.31076 6.58856 2.64288 5.63961 3.39124 4.89124C4.13961 4.14288 5.08856 3.81076 6.26098 3.65314C7.40019 3.49997 8.85582 3.49998 10.6936 3.5H12.8064C14.6442 3.49998 16.0998 3.49997 17.239 3.65314C18.4114 3.81076 19.3604 4.14288 20.1088 4.89124C20.62 5.40252 20.9386 6.00974 21.1394 6.72218C21.1799 6.86575 21.067 7.00387 20.9179 7L18.394 7.00001C15.5574 7.00001 13.0571 9.24091 13.0571 12.25C13.0571 15.2591 15.5574 17.5 18.394 17.5H20.9179ZM5.75 7.5C5.33579 7.5 5 7.83579 5 8.25C5 8.66421 5.33579 9 5.75 9H9.75C10.1642 9 10.5 8.66421 10.5 8.25C10.5 7.83579 10.1642 7.5 9.75 7.5H5.75Z" fill="#839280"/>
 					</svg>
 				</button>
-				<div class="flex items-center gap-[10px]">
+				<router-link :to="{ name:'profile' }" class="flex items-center gap-[10px]">
 					<div class="w-[48px] h-[48px] rounded-[8px] overflow-hidden flex items-center">
 						<img src="/assets/img/profile.png" alt="profile" class="w-full h-full object-cover">
 					</div>
@@ -40,7 +40,7 @@
 							</svg>
 						</div>
 					</div>
-				</div>
+				</router-link>
 				<button class="rounded-[8px] items-center justify-center flex cursor-pointer active:scale-95 hover:opacity-80 duration-200 green-btn">
 					<div class="relative flex items-center justify-center">
 						<div class="w-[6px] h-[6px] rounded-full bg-[#A23C3C] absolute right-[1px] top-[-1px]"></div>
@@ -66,7 +66,7 @@
 			</div>
 		</div>
 		<div :class="{'top-[73px] opacity-100' : isOpen, 'top-[-500px] opacity-0' : !isOpen}" class="w-full grid sm:grid-cols-2 fixed right-0 p-5 bg-[#1A1D1A]/80 backdrop-blur-2xl gap-2 duration-300 z-5 max-w-[600px] xl:hidden">
-			<router-link :to="'#'" class="rounded-[8px] items-center justify-center cursor-pointer active:scale-95 hover:opacity-80 duration-200 green-btn flex min-h-[42px] gap-2 group">
+			<router-link :to="{ name: 'contracts' }" class="rounded-[8px] items-center justify-center cursor-pointer active:scale-95 hover:opacity-80 duration-200 green-btn flex min-h-[42px] gap-2 group">
 				<svg class="stroke-[#839280] group-hover:stroke-[#FFB531] duration-200" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<g clip-path="url(#clip0_5_143)">
 						<path d="M15.5854 9.69527C16.4857 8.79497 16.9915 7.5739 16.9915 6.30068C16.9915 5.02746 16.4857 3.80639 15.5854 2.90609C14.6851 2.00578 13.464 1.5 12.1908 1.5C10.9176 1.5 9.6965 2.00578 8.7962 2.90609L3.39844 8.30385V15.101H10.1956L15.5854 9.69527Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -76,7 +76,7 @@
 				</svg>
 				<p class="uppercase text-[#839280] group-hover:text-[#FFB531] text-[12px] font-semibold duration-200">Контракты</p>
 			</router-link>
-			<router-link :to="'#'" class="rounded-[8px] items-center justify-center cursor-pointer active:scale-95 hover:opacity-80 duration-200 green-btn flex min-h-[42px] gap-2 group">
+			<router-link :to="{ name: 'upgrade' }" class="rounded-[8px] items-center justify-center cursor-pointer active:scale-95 hover:opacity-80 duration-200 green-btn flex min-h-[42px] gap-2 group">
 				<svg class="fill-[#839280] group-hover:fill-[#FFB531] duration-200" width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<g mask="url(#mask0_5_156)">
 						<path d="M0.821719 15.6829C1.27672 16.1286 2.01172 16.1286 2.46672 15.6829L7.00505 11.2601L11.5317 15.6944C11.9867 16.1401 12.7217 16.1401 13.1767 15.6944C13.6317 15.2486 13.6317 14.5286 13.1767 14.0829L7.82172 8.83722C7.36672 8.3915 6.63172 8.3915 6.17672 8.83722L0.821719 14.0715C0.366719 14.5172 0.366719 15.2372 0.821719 15.6829Z"/>

@@ -4,7 +4,7 @@
 
 <template>
 	<div class="items-center gap-8 hidden xl:flex">
-		<router-link :to="{}" class="flex items-center gap-2 group">
+		<router-link :to="{name: 'contracts'}" class="flex items-center gap-2 group">
 			<svg class="stroke-[#839280] group-hover:stroke-[#FFB531] duration-200" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<g clip-path="url(#clip0_5_143)">
 					<path d="M15.5854 9.69527C16.4857 8.79497 16.9915 7.5739 16.9915 6.30068C16.9915 5.02746 16.4857 3.80639 15.5854 2.90609C14.6851 2.00578 13.464 1.5 12.1908 1.5C10.9176 1.5 9.6965 2.00578 8.7962 2.90609L3.39844 8.30385V15.101H10.1956L15.5854 9.69527Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -14,7 +14,7 @@
 			</svg>
 			<p class="uppercase text-[#839280] group-hover:text-[#FFB531] text-[14px] font-semibold duration-200">Контракты</p>
 		</router-link>
-		<router-link :to="{}" class="flex items-center gap-2 group">
+		<router-link :to="{ name: 'upgrade' }" class="flex items-center gap-2 group">
 			<svg class="fill-[#839280] group-hover:fill-[#FFB531] duration-200" width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<g mask="url(#mask0_5_156)">
 					<path d="M0.821719 15.6829C1.27672 16.1286 2.01172 16.1286 2.46672 15.6829L7.00505 11.2601L11.5317 15.6944C11.9867 16.1401 12.7217 16.1401 13.1767 15.6944C13.6317 15.2486 13.6317 14.5286 13.1767 14.0829L7.82172 8.83722C7.36672 8.3915 6.63172 8.3915 6.17672 8.83722L0.821719 14.0715C0.366719 14.5172 0.366719 15.2372 0.821719 15.6829Z"/>
