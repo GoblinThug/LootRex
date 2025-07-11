@@ -13,12 +13,12 @@
 							<p class="text-[14px] text-[#839280] leading-none">Лучшие кейсы CS2</p>
 						</div>
 						<div class="flex flex-col gap-3">
-							<p class="text-[14px] text-[#839280] leading-none">Партнёрская программа</p>
-							<p class="text-[14px] text-[#839280] leading-none">Пользовательское соглашение</p>
-							<p class="text-[14px] text-[#839280] leading-none">Политика конфиденциальности</p>
-							<p class="text-[14px] text-[#839280] leading-none">Условия использования</p>
-							<p class="text-[14px] text-[#839280] leading-none">Контакты</p>
-							<p class="text-[14px] text-[#839280] leading-none">FAQ</p>
+							<router-link :to="{ name: 'referrals' }" class="text-[14px] text-[#839280] leading-none">Реферальная система</router-link>
+							<router-link :to="'#'" class="text-[14px] text-[#839280] leading-none">Пользовательское соглашение</router-link>
+							<router-link :to="'#'" class="text-[14px] text-[#839280] leading-none">Политика конфиденциальности</router-link>
+							<router-link :to="'#'" class="text-[14px] text-[#839280] leading-none">Условия использования</router-link>
+							<router-link :to="{ name: 'contacts' }" class="text-[14px] text-[#839280] leading-none">Контакты</router-link>
+							<router-link :to="{ name: 'faq' }" class="text-[14px] text-[#839280] leading-none">FAQ</router-link>
 						</div>
 					</div>
 					<div class="max-w-[724px] grid sm:grid-cols-2 gap-5 w-full flex-col lg:flex-row">

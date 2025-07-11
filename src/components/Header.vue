@@ -4,6 +4,7 @@
 	import {openModal} from "jenesius-vue-modal";
 
 	const isOpen = ref(false);
+	const isAuth = ref(false);
 
 	const toggleMenu = () => {
 		isOpen.value = !isOpen.value;
@@ -19,12 +20,12 @@
 			</router-link>
 			<Navigation/>
 			<div class="grid grid-cols-[1fr_48px_48px] sm:grid-cols-[48px_1fr_48px_48px_48px] xl:grid-cols-[48px_1fr_48px_48px] h-[48px] gap-[10px] justify-self-end">
-				<button @click="openModal('auth')" class="rounded-[8px] items-center justify-center cursor-pointer active:scale-95 hover:opacity-80 duration-200 green-btn hidden sm:flex">
+				<router-link :to="{ name: 'payment' }" class="rounded-[8px] items-center justify-center cursor-pointer active:scale-95 hover:opacity-80 duration-200 green-btn hidden sm:flex">
 					<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path fill-rule="evenodd" clip-rule="evenodd" d="M21.101 8.50353C21.0443 8.49996 20.9826 8.49998 20.9187 8.5L20.9026 8.50001H18.3942C16.3265 8.50001 14.5573 10.1276 14.5573 12.25C14.5573 14.3724 16.3265 16 18.3942 16H20.9026H20.9187C20.9826 16 21.0443 16.0001 21.101 15.9965C21.9409 15.9434 22.6836 15.2862 22.7461 14.3682C22.7502 14.308 22.7501 14.2431 22.7501 14.183V14.1667V10.3333V10.317C22.7501 10.2569 22.7502 10.192 22.7461 10.1318C22.6836 9.21381 21.9409 8.55657 21.101 8.50353ZM18.1718 13.25C18.7041 13.25 19.1356 12.8023 19.1356 12.25C19.1356 11.6977 18.7041 11.25 18.1718 11.25C17.6395 11.25 17.2079 11.6977 17.2079 12.25C17.2079 12.8023 17.6395 13.25 18.1718 13.25Z" fill="#839280"/>
 						<path fill-rule="evenodd" clip-rule="evenodd" d="M20.9179 17.5C21.067 17.4961 21.1799 17.6342 21.1394 17.7778C20.9387 18.4902 20.62 19.0975 20.1088 19.6088C19.3604 20.3571 18.4114 20.6892 17.239 20.8469C16.0998 21 14.6442 21 12.8064 21H10.6936C8.85583 21 7.40019 21 6.26098 20.8469C5.08856 20.6892 4.13961 20.3571 3.39124 19.6088C2.64288 18.8604 2.31076 17.9114 2.15314 16.739C1.99997 15.5998 1.99998 14.1442 2 12.3064V12.1936C1.99998 10.3558 1.99997 8.90019 2.15314 7.76098C2.31076 6.58856 2.64288 5.63961 3.39124 4.89124C4.13961 4.14288 5.08856 3.81076 6.26098 3.65314C7.40019 3.49997 8.85582 3.49998 10.6936 3.5H12.8064C14.6442 3.49998 16.0998 3.49997 17.239 3.65314C18.4114 3.81076 19.3604 4.14288 20.1088 4.89124C20.62 5.40252 20.9386 6.00974 21.1394 6.72218C21.1799 6.86575 21.067 7.00387 20.9179 7L18.394 7.00001C15.5574 7.00001 13.0571 9.24091 13.0571 12.25C13.0571 15.2591 15.5574 17.5 18.394 17.5H20.9179ZM5.75 7.5C5.33579 7.5 5 7.83579 5 8.25C5 8.66421 5.33579 9 5.75 9H9.75C10.1642 9 10.5 8.66421 10.5 8.25C10.5 7.83579 10.1642 7.5 9.75 7.5H5.75Z" fill="#839280"/>
 					</svg>
-				</button>
+				</router-link>
 				<router-link :to="{ name:'profile' }" class="flex items-center gap-[10px]">
 					<div class="w-[48px] h-[48px] rounded-[8px] overflow-hidden flex items-center">
 						<img src="/assets/img/profile.png" alt="profile" class="w-full h-full object-cover">
@@ -41,7 +42,7 @@
 						</div>
 					</div>
 				</router-link>
-				<button class="rounded-[8px] items-center justify-center flex cursor-pointer active:scale-95 hover:opacity-80 duration-200 green-btn">
+				<button  class="rounded-[8px] items-center justify-center flex cursor-pointer active:scale-95 hover:opacity-80 duration-200 green-btn">
 					<div class="relative flex items-center justify-center">
 						<div class="w-[6px] h-[6px] rounded-full bg-[#A23C3C] absolute right-[1px] top-[-1px]"></div>
 						<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -65,7 +66,7 @@
 				</button>
 			</div>
 		</div>
-		<div :class="{'top-[73px] opacity-100' : isOpen, 'top-[-500px] opacity-0' : !isOpen}" class="w-full grid sm:grid-cols-2 fixed right-0 p-5 bg-[#1A1D1A]/80 backdrop-blur-2xl gap-2 duration-300 z-5 max-w-[600px] xl:hidden">
+		<div :class="{'top-[73px] opacity-100' : isOpen, 'top-[-500px] opacity-0' : !isOpen}" class="w-full grid sm:grid-cols-2 fixed right-0 p-5 bg-[#1A1D1A]/80 backdrop-blur-2xl gap-2 duration-300 z-[100] max-w-[600px] xl:hidden">
 			<router-link :to="{ name: 'contracts' }" class="rounded-[8px] items-center justify-center cursor-pointer active:scale-95 hover:opacity-80 duration-200 green-btn flex min-h-[42px] gap-2 group">
 				<svg class="stroke-[#839280] group-hover:stroke-[#FFB531] duration-200" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<g clip-path="url(#clip0_5_143)">

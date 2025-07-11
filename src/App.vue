@@ -13,6 +13,9 @@
 	import RequirementModal from "@/components/modals/RequirementModal.vue";
 	import HowItWorkModal from "@/components/modals/HowItWorkModal.vue";
 	import CalendarInfoModal from "@/components/modals/CalendarInfoModal.vue";
+	import CreatePromoModal from "@/components/modals/referral/CreatePromoModal.vue";
+	import WithdrawModal from "@/components/modals/referral/WithdrawModal.vue";
+	import InfoPromoModal from "@/components/modals/referral/InfoPromoModal.vue";
 
 	config({
 		store: {
@@ -20,6 +23,9 @@
 			requirement: RequirementModal,
 			howItWork: HowItWorkModal,
 			calendarInfo: CalendarInfoModal,
+			createPromo: CreatePromoModal,
+			referralWithdraw: WithdrawModal,
+			infoReferrals: InfoPromoModal,
 		}
 	});
 </script>

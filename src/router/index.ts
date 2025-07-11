@@ -13,6 +13,7 @@ import FAQ from "@/views/FAQ.vue";
 import Contracts from "@/views/Contracts.vue";
 import Upgrade from "@/views/Upgrade.vue";
 import Profile from "@/views/Profile.vue";
+import Referral from "@/views/Referral.vue";
 
 const routes: RouteRecordRaw[] = [
     {
@@ -85,6 +86,12 @@ const routes: RouteRecordRaw[] = [
         path: "/profile",
         name: "profile",
         component: Profile,
+        props: true,
+    },
+    {
+        path: "/referrals",
+        name: "referrals",
+        component: Referral,
         props: true,
     },
 ];
